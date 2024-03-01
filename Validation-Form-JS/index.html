@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <style>
+        body{
+            background-color: chartreuse;
+        }
+        form{
+            background-color: white;
+             width: 200px;
+             margin: 12% auto;
+             text-align: center;
+
+             padding: 20px;
+        }
+        .form-container input{
+          margin: 10px;
+          height: 35px;
+          border: none;
+          outline: none;
+          background-color: rgba(128, 128, 128, 0.221);
+          border-radius: 15px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          text-align: center;
+        }
+        .errorcolor{
+            color: red;
+            font-size: 14px;
+            font-family: sans-serif;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="" onsubmit="return validationFrom()">
+        <div class="form-container">
+        <h2>Login</h2>
+       <input type="user name" placeholder="User Name" id="username"> <br>
+        <span id="usererror"  class="errorcolor"></span>
+       <input type="password" placeholder="Password" id="password"> <br>
+       <span id="passerror" class="errorcolor"></span>
+       <input type="submit">
+       </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
